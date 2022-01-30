@@ -1,6 +1,6 @@
 ## Welcome To Excellence Classes
 
-You can use the [Free available Materials ](https://github.com/EXCELLENCE-CLASSES/EXCELLENT-PROJECTS/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+You can use the [Edit view page on github ](https://github.com/EXCELLENCE-CLASSES/EXCELLENT-PROJECTS/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
