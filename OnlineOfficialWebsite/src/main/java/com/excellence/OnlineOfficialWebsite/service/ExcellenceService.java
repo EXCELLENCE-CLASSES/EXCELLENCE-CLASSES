@@ -2,6 +2,8 @@ package com.excellence.OnlineOfficialWebsite.service;
 
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.excellence.OnlineOfficialWebsite.model.ExcellenceClassesDetails;
@@ -19,6 +21,7 @@ import lombok.ToString;
 public class ExcellenceService {
 	
 	
+	@Autowired
 	private ExcellenceClassesDetails excellenceDetails;
 
 	public ExcellenceClassesDetails getExcellenceDetails() {

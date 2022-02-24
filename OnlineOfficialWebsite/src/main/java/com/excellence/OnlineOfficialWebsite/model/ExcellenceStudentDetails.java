@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,6 +18,7 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name="excellenceStudent")
+@Component
 public class ExcellenceStudentDetails {
 	
 	            
