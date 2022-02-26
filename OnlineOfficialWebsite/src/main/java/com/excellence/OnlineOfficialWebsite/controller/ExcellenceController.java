@@ -1,20 +1,22 @@
 package com.excellence.OnlineOfficialWebsite.controller;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.excellence.OnlineOfficialWebsite.model.ExcellenceClassesDetails;
+import com.excellence.OnlineOfficialWebsite.model.ExcellenceStudentDetails;
 import com.excellence.OnlineOfficialWebsite.repository.ExcellenceClassesDetailsRepository;
 import com.excellence.OnlineOfficialWebsite.repository.ExcellenceStudentDetailsRepository;
 import com.excellence.OnlineOfficialWebsite.repository.ExcellenceTeacherDetailsRepository;
-import com.excellence.OnlineOfficialWebsite.service.ExcellenceService;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -46,12 +48,31 @@ public class ExcellenceController {
 		
 	}
 	@RequestMapping("/abc")	
-	public ModelAndView registrationPage() 
+	public ModelAndView registrationPage(Model model) 
 	{
+		ExcellenceStudentDetails exc=new ExcellenceStudentDetails();
+		model.addAttribute("abc", exc);
 		ModelAndView mv=new ModelAndView();
-		mv.setViewName("abc.html");
+		mv.setViewName("stu.html");
 		
 		return mv;
+	}
+	
+	@RequestMapping(value="register") 
+	public ModelAndView registrationForm(@ModelAttribute("exc") ExcellenceStudentDetails exc) 
+	{
+		
+		System.out.println(exc);
+		  
+		System.out.println("Executing here");
+		
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("index.html");
+		return mv ;
+		
+		
+		
+		
 	}
 	
 	
