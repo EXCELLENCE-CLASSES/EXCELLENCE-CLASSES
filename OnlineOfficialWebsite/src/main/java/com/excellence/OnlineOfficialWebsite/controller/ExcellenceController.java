@@ -53,7 +53,7 @@ public class ExcellenceController {
 		ExcellenceStudentDetails exc=new ExcellenceStudentDetails();
 		model.addAttribute("abc", exc);
 		ModelAndView mv=new ModelAndView();
-		mv.setViewName("stu.html");
+		mv.setViewName("registration.html");
 		
 		return mv;
 	}
@@ -61,6 +61,7 @@ public class ExcellenceController {
 	@RequestMapping(value="register") 
 	public ModelAndView registrationForm(@ModelAttribute("exc") ExcellenceStudentDetails exc) 
 	{
+		excStuRepo.save(exc);
 		
 		System.out.println(exc);
 		  

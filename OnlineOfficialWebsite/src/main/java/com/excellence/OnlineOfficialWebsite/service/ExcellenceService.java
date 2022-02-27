@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.excellence.OnlineOfficialWebsite.model.ExcellenceClassesDetails;
+import com.excellence.OnlineOfficialWebsite.model.ExcellenceStudentDetails;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,7 +21,8 @@ import lombok.ToString;
 @Service
 public class ExcellenceService {
 	
-	
+	@Autowired
+	public ExcellenceStudentDetails excs;
 	@Autowired
 	private ExcellenceClassesDetails excellenceDetails;
 
