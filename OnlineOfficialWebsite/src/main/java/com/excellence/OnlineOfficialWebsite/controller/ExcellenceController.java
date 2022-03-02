@@ -69,12 +69,34 @@ public class ExcellenceController {
 		
 		ModelAndView mv=new ModelAndView();
 		mv.setViewName("index.html");
-		return mv ;
-		
-		
+		return mv ;		
 		
 		
 	}
+	
+	@RequestMapping("contactUs")	
+	public ModelAndView aboutUs(Model model) 
+	{
+		
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("contactUs.html");
+		
+		return mv;
+	}
+	
+	
+	@RequestMapping("aboutUs")	
+	public ModelAndView contactUs(Model model) 
+	{
+		
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("aboutUs.html");
+		
+		return mv;
+	}
+	
+	
+	
 	
 	
 
