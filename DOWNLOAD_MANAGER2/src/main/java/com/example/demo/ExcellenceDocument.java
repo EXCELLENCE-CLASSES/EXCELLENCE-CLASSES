@@ -26,6 +26,16 @@ public class ExcellenceDocument {
 	private Date uploadTime ;
 	
 	private byte[] content;
+	
+	
+	public ExcellenceDocument(Long id, String name, long size) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.size = size;
+	}
+
+	ExcellenceDocument(){}
 
 	public Long getId() {
 		return id;

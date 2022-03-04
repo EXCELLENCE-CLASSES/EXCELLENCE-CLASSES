@@ -6,9 +6,11 @@ package com.example.demo;
 
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,8 +27,10 @@ public class DMController {
 	private ExcellenceDocumentRepository repo;
 	
 	@GetMapping("/")	
-	public String myHomePage() 
+	public String myHomePage(Model model) 	
 	{
+		List<ExcellenceDocument> excDoc=repo.findAll();
+		model.addAttribute("exDoc", excDoc);
 		return "index.html";
 	}
 	@PostMapping("/upload")
