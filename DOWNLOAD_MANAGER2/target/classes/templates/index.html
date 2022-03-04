@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Welcome</title>
@@ -7,8 +7,29 @@
 </head>
 <body>
 <div class="container-fluid text-center">
+<div>
 
 <h1>Welcome To Excellence Classes Document Manager</h1>
+
+</div>
+<form th:action="@{/upload}" method="post" enctype="multipart/form-data" >
+<div>
+<h2>Upload Your Files:</h2>
+<p>
+<input type="file" name="document" required/>
+
+</p>
+
+<p>
+
+<input type="submit" value="upload" class="btn btn-primary"/>
+
+</p>
+
+</div>
+</form>
+
+
 
 </div>
 
