@@ -25,7 +25,7 @@
           <img th:src="@{/images/doc.png}" width="50" />
      </div>
      <div>
-         [[${doc.name}]]   
+        <a th:href="@{'/download?id='+${doc.id}}"> [[${doc.name}]]   </a>
          
          
          </div>

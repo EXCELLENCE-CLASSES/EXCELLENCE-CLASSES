@@ -7,8 +7,13 @@ package com.example.demo;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
+
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -48,6 +53,35 @@ public class DMController {
 		
 		return "redirect:/";
 	}
+	@GetMapping("/download")
+     public void downloadFile(@Param("id") Long id ,HttpServletResponse response) throws Exception 
+	{
+		Optional<ExcellenceDocument> result=repo.findById(id);
+		if(!result.isPresent()) 
+		{
+			throw new  Exception("Could not find document with ID:"+id);
+			
+		}
+		ExcellenceDocument excDoc=result.get();
+		response.setContentType("application/octet-stream");
+		String headerKey="Content-Disposition";
+		String headerValue="attachment;filename="+excDoc.getName();
+		response.setHeader(headerKey, headerValue);
+		ServletOutputStream outputStream=response.getOutputStream();
+		
+		outputStream.write(excDoc.getContent());
+		outputStream.close();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
 	
 	
 	
