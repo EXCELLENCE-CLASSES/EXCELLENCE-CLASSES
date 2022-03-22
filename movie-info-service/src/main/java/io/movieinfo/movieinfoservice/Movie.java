@@ -9,9 +9,9 @@ import lombok.Data;
 public class Movie {
 	
 	
-	String movieName ;
+	private String movieName ;
 	
-	String movieId ;
+	private String movieId ;
 	
 	
 	
