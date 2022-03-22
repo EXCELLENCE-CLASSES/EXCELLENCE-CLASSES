@@ -8,7 +8,7 @@ import lombok.Data;
 public class Rating {
 	
 	
-	private String movieId ;
+	 private String movieId ;
 	
 	private int rating ;
 	
