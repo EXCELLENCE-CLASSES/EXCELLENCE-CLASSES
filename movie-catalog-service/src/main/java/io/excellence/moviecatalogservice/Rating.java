@@ -1,33 +1,16 @@
 package io.excellence.moviecatalogservice;
 
-
-
-
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
-
-
-public class CatalogItem 
-{
+public class Rating {
 	
 	
-	
-	
-	private String name ;
-	
-	
-	private String desc;
-	
+	 private String movieId ;
 	
 	private int rating ;
-
-
-
-	
 	
 	
 	
