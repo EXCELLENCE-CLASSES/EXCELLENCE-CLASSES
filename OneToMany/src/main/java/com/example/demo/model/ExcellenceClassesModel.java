@@ -5,12 +5,9 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 
@@ -25,8 +22,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ExcellenceClassesModel {
 	
-	@Id
-	@GeneratedValue
+	@Id	
 	int excellenceId ;
 	
 	
@@ -41,7 +37,7 @@ public class ExcellenceClassesModel {
      //@OneToMany Mapping Annotation Test
 	
     @OneToMany(cascade=CascadeType.ALL)
-    @JoinColumn(name="F_Key")
+ //  @JoinColumn(name="F_Key"a)
 	
 	private List<ExcellenceStudentModel> excModel=new ArrayList<>(); 
      

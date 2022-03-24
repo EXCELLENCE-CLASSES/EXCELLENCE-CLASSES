@@ -1,10 +1,8 @@
 package com.example.demo.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -18,8 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ExcellenceStudentModel {
 	
-	@Id
-	@GeneratedValue
+	@Id	
 	private int excellenceStudentId ;
 	
 	

@@ -1,8 +1,5 @@
 package com.example.demo;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,15 +18,25 @@ public class OneToOneApplication implements CommandLineRunner{
 		ExcellenceClassesModel excClassesModel=new ExcellenceClassesModel();
 		
 		excClassesModel.setExcellenceName("Excellence Online&Offline Classes");
-		ExcellenceStudentModel excStuModel=new ExcellenceStudentModel();
+		excClassesModel.setExcellenceId(1);
 		
-		excStuModel.setExcellenceStudentName("Er. Ritesh Ranjan Arya");
-		List<ExcellenceStudentModel> a1=new ArrayList<>();
-		a1.add(excStuModel);
+		
+		
 		ExcellenceStudentModel excStuModel2=new ExcellenceStudentModel();
-		excStuModel.setExcellenceStudentName("Ritesh Ranjan Arya");
-		a1.add(excStuModel2);
-		excClassesModel.setExcModel(a1);		
+		excStuModel2.setExcellenceStudentName("Son");
+		excStuModel2.setExcellenceStudentId(1);
+		
+		
+		ExcellenceStudentModel excStuModel3=new ExcellenceStudentModel();
+		excStuModel3.setExcellenceStudentName("arya");
+		excStuModel3.setExcellenceStudentId(2);
+		
+		
+		excClassesModel.getExcModel().add(excStuModel2);
+		excClassesModel.getExcModel().add(excStuModel3);
+		
+	
+		
 		
 		return excClassesModel ;
 	}
