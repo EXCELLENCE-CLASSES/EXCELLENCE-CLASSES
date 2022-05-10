@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.Arrays;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -227,6 +229,7 @@ public class JavaArrayApplication {
 		}
 		*/
 		//Printing array elements in descending order
+		/*
 		int ch[]= {10,40,50,80,20,50,70};
 		int temp=0;
 		//Printing elements before sorting
@@ -251,6 +254,107 @@ public class JavaArrayApplication {
 		{
 			System.out.print(ch[i]);
 		}
+		*/
+		//3rd largest element in array
+		/*
+		int aray[]= {20,30,60,50,40,90,30,40,50,60,30};
+		int temp=0;
+		for(int i=0;i<aray.length;i++) {
+			for(int j=i+1;j<aray.length;j++) {
+				if(aray[i]<aray[j])
+				{
+					temp=aray[i];
+					aray[i]=aray[j];
+					aray[j]=temp;
+					
+				}
+				
+			}
+		}
+		for(int k=0;k<aray.length;k++) 
+		{
+			
+			System.out.println("Elements of aray after sorting are "+aray[k]);
+		}
+		System.out.println("3rd Larsgest element is "+aray[2]);
+		*/
+		//Second highest element in a array 
+		/*
+		System.out.println("2nd Largest number in a array");
+		int ch[]= {20,70,50,90,40};
+		int temp=0;
+		for(int i=0;i<ch.length;i++) {
+			for(int j=i+1;j<ch.length;j++) 
+			{
+				if(ch[i]>ch[j]) 
+				{
+					temp=ch[i];
+					ch[i]=ch[j];
+					ch[j]=temp;
+				}
+				
+			}
+		}
+		for(int i=0;i<ch.length;i++) 
+		{
+			System.out.println("Elements of array in assecending array are "+ch[i]);
+		}
+		System.out.println("Second highest element of array is "+ch[ch.length-2]);
+		*/
+		//Maximum value in a array is :-
+		/*
+		int ch[]= {5,20,25,5,95,20,25,60,85,85};
+		int max=0;
+		
+			for(int j=0;j<ch.length;j++) 
+			{
+				if(max<ch[j]) {
+					max=ch[j];
+				}
+				
+			}
+			
+			System.out.println("Maximum value in array is "+max);
+			*/
+		/*
+		 //Removing dupliocate elements from an array
+		   int aray[]= {10,5,10,20,5,10,5,10};
+		   for(int i=0;i<aray.length;i++) {
+			   for(int j=i+1;j<aray.length;j++) {
+				   if(aray[i]==aray[j]) {
+					   aray[j]='0';
+				   }
+			   }
+		   }
+		   for(int k=0;k<aray.length;k++) 
+		   {
+			   if(aray[k]!='0')
+			   System.out.println("Elements is array after removing duplicate elements are "+aray[k]);
+		   }
+		   */
+		//Priting odd and even values of an array
+		/*
+		int aray[]= {45,25,68,23,89,79};
+		for(int i=0;i<aray.length;i++) {
+			if(aray[i]%2==0)
+			System.out.println("Even value of an array is "+aray[i]);
+			else
+				System.out.println("Odd value of an aray is "+aray[i]);
+		}
+		*/
+		//Sorting array using sot() method of Arrays class 
+		/*
+		int aray[]= {10,79,45};
+		Arrays.sort(aray);
+		for(int i=0;i<aray.length;i++)
+			System.out.println(aray[i]);
+			
+			*/
+	
+		
+		
+		
+		
 		
 		
 		
