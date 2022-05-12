@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 import org.springframework.boot.SpringApplication;
@@ -8,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BasicProgramApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		SpringApplication.run(BasicProgramApplication.class, args);
 		//Reverse of a number
 		/*
@@ -127,7 +130,65 @@ public class BasicProgramApplication {
 			else
 				System.out.println("C is largest");
 		*/
-			  
+		//Smallest of 3 numbers
+		/*
+		
+		int temp,a=10,b=20,c=30;
+		
+		temp=a<b?a:b;
+		temp=c<temp?c:temp;
+		
+		System.out.println("smallest of 3 numbers are "+temp);
+		*/
+		//swap two variable using 3rd variable or bitwise operator
+		/*
+		int a=10,b=12;
+		
+		a=a^b;
+		b=a^b;
+		a=a^b;
+		
+		System.out.println("Value of a is "+a+" and value of b is "+b);
+		*/
+		//Check for ISBN number
+		/*
+		InputStreamReader ist=new InputStreamReader(System.in);
+		BufferedReader bd=new BufferedReader(ist);
+		long n=Long.parseLong(bd.readLine());
+		// Scanner scn=new Scanner(System.in);
+		// int n=scn.nextInt();
+		long rem,temp,digits=0,sum=0;
+		temp=n;
+		while(n!=0)
+		{
+			n=n/10;
+			digits++;
+			
+		}
+		System.out.println("value og digits are"+digits);
+		n=temp;
+		for(int i=1;i<=digits;i++) 
+		{
+			rem=n%10;
+			sum+=i*rem;
+			System.out.println("value of sum is"+sum);
+			n=n/10;
+		}
+		System.out.println("value of sum is "+sum); */
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
 		
 		
 		
