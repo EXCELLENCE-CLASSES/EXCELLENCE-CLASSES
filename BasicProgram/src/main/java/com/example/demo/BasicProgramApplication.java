@@ -175,28 +175,93 @@ public class BasicProgramApplication {
 			n=n/10;
 		}
 		System.out.println("value of sum is "+sum); */
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
+		//Check for peterson number 
+		/*
+		int n=145,rem,sum=0,temp=0;
+		temp=n;
+		while(n!=0) 
+		{
+			rem=n%10;
+			sum+=fact(rem);
+			n=n/10;
+			
+			
+		}
+		n=temp;
+		System.out.println("Peterson niumber for "+n+" is = "+sum);
 		
 		
 		
 		
 		
 		}
+	public static int fact(int n) 
+	{
+		int mul=1,sum=0;
+	     for(int i=1;i<=n;i++)
+	     {
+	    	mul= mul*i;
+	    	
+	    	 
+	    	 
+	     }
+		return mul;*/
+		//Check for sunny number
+		/*
+		Scanner scn=new Scanner(System.in);
+		double sqrt,temp,n=scn.nextInt(),floor;
+		temp=++n;
+		System.out.println("Value of temp is "+temp);
+		sqrt=Math.sqrt(temp);
+		floor=Math.floor(sqrt);
+		if((sqrt-floor)==0)
+			System.out.println("Given Number Is Sunny Number");
+		else 
+			System.out.println("Given number is not sunny number");
+			*/
+		//Check for tech number
+		
+		/*
+		Scanner scn=new Scanner(System.in);
+		int n=scn.nextInt();
+		int temp,digits=0;
+		temp=n;
+		while(n!=0) 
+		{
+			digits++;
+		    n=n/10;
+			
+		}
+		n=temp;
+		System.out.println("Number of digits in given number is "+digits);
+		int firstHalf,secondHalf,sumHalfs,squareOfSumHalfs;
+		if(digits%2==0)
+		{
+			firstHalf=n%(int)(Math.pow(10, (digits/2)));
+			secondHalf=n/(int)(Math.pow(10, (digits/2)));
+			squareOfSumHalfs=((firstHalf+secondHalf)*(firstHalf+secondHalf));
+			if(squareOfSumHalfs==temp) 
+		     System.out.println("Given number is Tech Number");
+			else
+				System.out.println("Given number is not Tech Number");
+			
+		}
+		else
+			System.out.println("Given number is not tech number"); */
+		
+		
+		
+		
+		
+		
+			
+	}  
+	
+		
+		
+		
+		
+		
 		
 			
 		
