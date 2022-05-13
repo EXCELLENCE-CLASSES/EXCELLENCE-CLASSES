@@ -246,11 +246,33 @@ public class BasicProgramApplication {
 				System.out.println("Given number is not Tech Number");
 			
 		}
-		else
+		else/
 			System.out.println("Given number is not tech number"); */
+		// Xylem & Phloem programme
+		/*
+	
+	Scanner scn=new Scanner(System.in);
+	int n=scn.nextInt(),extrMean=0;
+	int temp=n,extrmSum=0;
+	while(n!=0) 
+	{
+		if(n==temp||n<10) 	    
+			extrmSum+=n%10;	    
+		else		
+			extrMean+=n%10;
+			n=n/10;
 		
 		
 		
+	}
+	if(extrmSum==extrMean) 
+		System.out.println("Given number is Xylem");
+	else
+		System.out.println("Given number is Phloem"); 
+		*/
+	
+	
+	
 		
 		
 		
