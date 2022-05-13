@@ -270,14 +270,48 @@ public class BasicProgramApplication {
 	else
 		System.out.println("Given number is Phloem"); 
 		*/
+		
+		//3rd prime number
+		/*
+		
+	Scanner scn=new Scanner(System.in);
+	int count=0,n=scn.nextInt();
+	for(int i=2;i<n;i++) 
+	{
+		if(!isPrime(i)) {
+				
+		count++;
+		}
+		if(count==3) {
+			System.out.println("3rd prime number is "+i);
+			
+			break;
+		}
+		
+		
+	}*/
 	
+	;
 	
 	
 		
 		
 		
 			
-	}  
+	} 
+	/*
+	public static boolean isPrime(int n) {
+		
+		
+			boolean	flag=false;
+		for(int p=2;p<n;p++) 
+		{
+			if(n%p==0)
+				flag=true;
+		}
+		
+         return flag; 
+	
 	
 		
 		
@@ -302,6 +336,7 @@ public class BasicProgramApplication {
 		
 		
 		
-	}
+	}*/
+}
 
 
