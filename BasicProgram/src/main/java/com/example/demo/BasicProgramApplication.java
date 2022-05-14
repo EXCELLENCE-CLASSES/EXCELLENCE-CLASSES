@@ -290,8 +290,75 @@ public class BasicProgramApplication {
 		
 		
 	}*/
-	
-	;
+		
+		//Check for automorphic number
+		
+	/*
+		Scanner scn=new Scanner(System.in);
+		int n=scn.nextInt(),temp=0,digits=0,last;
+		int square;
+		square=n*n;
+		temp=n;
+		while(n>0) 
+		{
+			digits++;
+			n=n/10;
+		}
+		n=temp;
+		last=square%(int)Math.pow(10, digits);
+		if(last==n) 
+			System.out.println("Given number is automorphic "+n);
+		else
+			System.out.println("Given number is not automorphic "+n);
+			
+			*/
+		//Neon number
+		/*
+		Scanner scn=new Scanner(System.in);
+		
+		int n=scn.nextInt();
+		int square=n*n,sum=0,rem;
+		while(square>0) 
+		{
+			rem=square%10;
+			sum+=rem;
+			square=square/10;
+		}
+		if(sum==n) 
+			System.out.println("Given number is neon number "+n);
+		else
+			System.out.println("Given number is not Neon number "+n);
+			*/
+		//Spy number
+		/*
+		Scanner scn=new Scanner(System.in);
+		int num=scn.nextInt(),sum=0,rem=0,mul=1;
+		while(num>0) 
+		{
+			rem=num%10;
+			sum+=rem;
+			mul=mul*rem;
+			num=num/10;
+			
+			
+		}
+		if(sum==mul) 
+		System.out.println("Given number is Spy number");
+		else
+			System.out.println("Given number is not spy number");
+			
+			*/
+		
+		
+		
+		
+		
+		
+		
+			
+			
+		
+		
 	
 	
 		
@@ -337,6 +404,15 @@ public class BasicProgramApplication {
 		
 		
 	}*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 
