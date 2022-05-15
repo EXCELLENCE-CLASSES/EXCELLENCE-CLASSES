@@ -73,9 +73,54 @@ public class JavaNamingProgrammeApplication {
 			System.out.println("Given number is Smith number "+temp);
 		else 
 			System.out.println("Given number is not Smith number "+temp);	 */
+		//Emrip number 
+		/*
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Input number ");
+		int revNum,num=scn.nextInt();
+		boolean flag,flg2;
+		flag=isPrime(num);
+		if(flag)
+		{
+			revNum=rev(num);
+			System.out.println(revNum);
+			if(isPrime(revNum))
+				System.out.println("Given number is Emirp");
+			else
+				System.out.println("Given number is not Emirp ");
+			
+		} */
+		
+		
+		
 			
 		
 	}
+	/*public static boolean isPrime(int num) 
+	{
+		boolean flag=true;
+		
+		for(int i=2;i<num;i++) {
+			if(num%i==0) 
+			{
+				flag=false;
+			}
+		}
+		return flag;
+	}*/
+	/* public static int rev(int n) 
+	{
+		int rem,sum=0;
+		while(n>0) 
+		{
+			rem=n%10;
+			sum=sum*10+rem;
+			n=n/10;
+			
+		}
+		return sum;
+	} */
+	
 	/* public static int fact(int n) 
 	{
 		int fact=1,mul=1;
@@ -138,7 +183,6 @@ public class JavaNamingProgrammeApplication {
 			return false ;
 		
 	} */
-	
 	
 	
 	
