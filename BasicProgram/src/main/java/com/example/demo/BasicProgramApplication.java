@@ -349,9 +349,43 @@ public class BasicProgramApplication {
 			
 			*/
 		
+		//Duck programme
+		/*
 		
+		Scanner scn=new Scanner(System.in);
+		int num=scn.nextInt(),temp,digits=0,first,rem;
+		temp=num;
+		boolean flag=false;
+		while(num>0) 
+		{
+			digits++;
+			num=num/10;
+		}
+		num=temp;
+		first=num/(int)Math.pow(10,digits-1);
 		
+		if(first==0)
+			System.out.println("Given number is not Duck number"+num);
+		else
+		{
+			while(num>0) 
+			{
+				rem=num%10;
+				if(rem==0)
+				{
+					System.out.println("Given number is duck number");
+					flag=true;
+					break;
+				}
+				
+				num=num/10;
+				
+			}
+			if(!flag) System.out.println("Given number is not duck number ");
+		}
+		*/
 		
+			
 		
 			
 			
