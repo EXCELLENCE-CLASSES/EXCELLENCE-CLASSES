@@ -29,6 +29,30 @@ public class MysteryNumberApplication {
 			
 		}
 		sc.close(); */
+		//Check for Evil number
+		/*
+		int num=7,count=0;
+		String s1=Integer.toBinaryString(num);
+		System.out.println("Binary equivalent of given number is "+s1);
+		for(int i=0;i<s1.length();i++) 
+		{
+			if(s1.charAt(i)==1) 
+			{
+				System.out.println(s1.charAt(i));
+				
+				count++;
+				System.out.println(count);
+			}
+		}
+		if(count%2==0) 
+		{
+			System.out.println("Given number is Evil number");
+			
+		}
+		else
+		{
+			System.out.println("Given number is not Evil number");
+		} */
 	}
 	/* public static int rev(int num) 
 	{
@@ -42,5 +66,9 @@ public class MysteryNumberApplication {
 		return rev;
 		
 	}*/
+	
+	
+	
+	
 
 }
