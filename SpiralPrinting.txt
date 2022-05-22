@@ -1,0 +1,61 @@
+int size=5;
+        int count=1,minCol=0,minRow=0,maxCol=size-1,maxRow=size-1,counter=1;
+        int spiral[][]=new int[size][size];
+        while(counter<=size*size)
+        {
+            
+                for(int j=minCol;j<=maxCol;j++)
+                {
+                    spiral[minRow][j]=counter;
+                    counter++;
+                }
+                    
+                
+                
+            
+             
+                for(int i=minRow+1;i<=maxRow;i++)
+                {
+                
+                    spiral[i][maxCol]=counter;
+                    counter++;
+                    
+                
+                
+                }
+                  for(int j=maxCol-1;j>=minCol;j--)
+                {
+                
+                    spiral[maxRow][j]=counter;
+                    counter++;
+                    
+                
+                
+                }
+                 for(int i=maxRow-1;i>=minRow+1;i--)
+                {
+               
+                    spiral[i][minCol]=counter;
+                    counter++;
+                    
+                
+                
+                }
+        
+            minCol++;
+            maxCol--;
+            minRow++;
+            maxRow--;
+            
+            
+            
+            
+        }
+        for(int i=0;i<size;i++)
+        {
+            for(int j=0;j<size;j++)
+            {
+                System.out.print(" "+spiral[i][j]);
+            }
+             System.out.println();
+        }
